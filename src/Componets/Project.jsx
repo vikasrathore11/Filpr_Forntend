@@ -1,11 +1,5 @@
 import { useEffect, useState } from "react";
 
-/**
- * Project.jsx
- * - Fetches projects from backend
- * - Shows skeleton while loading
- * - Responsive grid of cards with nicer design, hover overlay and CTA
- */
 
 function Project() {
   const [projects, setProjects] = useState([]);
@@ -14,7 +8,9 @@ function Project() {
   useEffect(() => {
     const fetchProjects = async () => {
       try {
-        const res = await fetch("http://localhost:8080/api/projects");
+        const API_BASE_URL = import.meta.env.VITE_BACKEND_URL
+
+        const res = await fetch(`${API_BASE_URL}/api/projects`);
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         const data = await res.json();
         setProjects(data);
@@ -33,7 +29,7 @@ function Project() {
     return (
       <section className="py-16 px-6">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-2xl font-bold mb-6">Our Projects</h2>
+          <h2 className="text-2xl font-bold mb-6 text-purple-700 mb-4 text-center">Our Projects</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             {[...Array(6)].map((_, i) => (
               <div key={i} className="animate-pulse bg-white rounded-xl shadow p-4 h-64" />

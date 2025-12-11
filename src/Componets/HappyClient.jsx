@@ -7,7 +7,9 @@ function HappyClient() {
   useEffect(() => {
     const fetchClients = async () => {
       try {
-        const response = await fetch("http://localhost:8080/api/clients");
+        const API_BASE_URL = import.meta.env.VITE_BACKEND_URL
+
+        const response = await fetch(`${API_BASE_URL}/api/clients`);
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
         }
@@ -32,27 +34,37 @@ function HappyClient() {
   }
 
   return (
-    <section className="flex flex-wrap justify-center gap-10 py-16 px-4 bg-gray-50">
-      {clients.map((client, i) => (
-        <div
-          key={i}
-          className="bg-white w-56 rounded-xl shadow-md hover:shadow-xl transition transform hover:-translate-y-1 text-center p-4"
-        >
-          <div className="w-28 h-28 mx-auto mb-3">
-            <img
-              src={client.imageUrl || "/default-client.jpg"}
-              alt={client.name}
-              className="w-full h-full object-cover rounded-full border-4 border-blue-500 shadow"
-            />
+    <>
+
+      
+        <h2 className="text-2xl font-bold mb-6 text-purple-700 mb-4 text-center bg-transparent
+ ">Happy Client</h2>
+
+      
+      <section className="flex flex-wrap justify-center gap-10 py-16 px-4 bg-gray-50">
+
+        {clients.map((client, i) => (
+          <div
+
+            key={i}
+            className="bg-white w-56 rounded-xl shadow-md hover:shadow-xl transition transform hover:-translate-y-1 text-center p-4"
+          >
+            <div className="w-28 h-28 mx-auto mb-3">
+              <img
+                src={client.imageUrl || "/default-client.jpg"}
+                alt={client.name}
+                className="w-full h-full object-cover rounded-full border-4 border-blue-500 shadow"
+              />
+            </div>
+            <h4 className="text-blue-600 font-semibold text-lg">{client.name}</h4>
+            <p className="text-gray-600 text-sm mb-3">{client.description}</p>
+            <button className="bg-orange-500 text-white font-bold px-4 py-1 rounded-full hover:bg-orange-600 transition text-sm">
+              Read More
+            </button>
           </div>
-          <h4 className="text-blue-600 font-semibold text-lg">{client.name}</h4>
-          <p className="text-gray-600 text-sm mb-3">{client.description}</p>
-          <button className="bg-orange-500 text-white font-bold px-4 py-1 rounded-full hover:bg-orange-600 transition text-sm">
-            Read More
-          </button>
-        </div>
-      ))}
-    </section>
+        ))}
+      </section>
+    </>
   );
 }
 
