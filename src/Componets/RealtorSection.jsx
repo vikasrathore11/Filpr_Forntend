@@ -70,7 +70,7 @@ function RealtorSection() {
             {/* Large Colorful Circle */}
             <div className="w-64 h-64 md:w-72 md:h-72 rounded-full overflow-hidden shadow-xl bg-gradient-to-br from-purple-400 via-pink-400 to-yellow-300 flex items-center justify-center">
               <img
-                src="/src/assets/Ellipse 11.svg"
+                src="/assets1/Ellipse 11.svg"
                 alt="Realtor"
                 className="w-32 h-32 object-cover rounded-full border-4 border-white shadow-md"
               />
@@ -79,7 +79,7 @@ function RealtorSection() {
             {/* Top small colorful circle */}
             <div className="absolute top-0 right-0 w-32 h-32 rounded-full overflow-hidden shadow-lg -translate-x-8 -translate-y-8 bg-gradient-to-tr from-green-300 via-blue-300 to-purple-300 flex items-center justify-center">
               <img
-                src="/src/assets/Ellipse 31.svg"
+                src="/assets1/Ellipse 31.svg"
                 alt="Client"
                 className="w-20 h-20 object-cover rounded-full border-2 border-white"
               />
@@ -88,7 +88,7 @@ function RealtorSection() {
             {/* Bottom small colorful circle */}
             <div className="absolute bottom-0 right-0 w-24 h-24 rounded-full overflow-hidden shadow-lg translate-x-8 translate-y-8 bg-gradient-to-br from-yellow-200 via-orange-300 to-pink-300 flex items-center justify-center">
               <img
-                src="/src/assets/Ellipse 13.svg"
+                src="/assets1/Ellipse 13.svg"
                 alt="Realtor"
                 className="w-16 h-16 object-cover rounded-full border-2 border-white"
               />

@@ -11,7 +11,7 @@ export default function AboutUsSection() {
       <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12 mb-14">
         {/* Left Image */}
         <img
-          src="/src/assets/pexels-fauxels-3184603.jpg"
+          src="/assets1/pexels-fauxels-3184603.jpg"
           alt="About small 1"
           className="w-40 h-48 md:w-48 md:h-56 rounded-xl shadow-lg object-cover hover:scale-105 transition duration-300"
         />
@@ -19,7 +19,7 @@ export default function AboutUsSection() {
         {/* Center Main Image */}
         <div className="relative">
           <img
-            src="/src/assets/pexels-karola-g-7876662.jpg"
+            src="/assets1/pexels-karola-g-7876662.jpg"
             alt="About main"
             className="w-80 h-80 md:w-96 md:h-96 rounded-2xl shadow-xl object-cover hover:scale-105 transition duration-300"
           />
@@ -32,7 +32,7 @@ export default function AboutUsSection() {
 
         {/* Right Image */}
         <img
-          src="/src/assets/pexels-edmond-dantes-4342493.jpg"
+          src="/assets1/pexels-edmond-dantes-4342493.jpg"
           alt="About small 2"
           className="w-40 h-48 md:w-48 md:h-56 rounded-xl shadow-lg object-cover hover:scale-105 transition duration-300"
         />

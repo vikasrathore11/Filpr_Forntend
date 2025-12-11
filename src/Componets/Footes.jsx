@@ -45,7 +45,7 @@ function Footer() {
       <div
         className="relative h-64 md:h-80 w-full flex flex-col items-center justify-center text-center text-white p-6 rounded mb-6"
         style={{
-          backgroundImage: "url('/src/assets/Rectangle.svg')",
+          backgroundImage: "url('/assets1/Rectangle.svg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
@@ -105,7 +105,7 @@ function Footer() {
 
       <div className="logo">
  <img
-  src="/src/assets/logo.svg"
+  src="/assets1/logo.svg"
   className="h-10 w-auto invert brightness-200"
   alt="Real Trust Logo"
 />

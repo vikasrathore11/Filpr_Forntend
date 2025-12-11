@@ -40,7 +40,7 @@ function HeroSection() {
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: "url('/src/assets/main 1.svg')" }}
+        style={{ backgroundImage: "url('/assets1//main 1.svg')" }}
       ></div>
 
       {/* Dark Overlay */}

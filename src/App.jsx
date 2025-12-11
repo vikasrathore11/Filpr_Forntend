@@ -4,7 +4,6 @@ import AdminLayout from "./Componets/Admin/AdminLayout";
 import Clients from "./Componets/Admin/Clients";
 import Subscribers from "./Componets/Admin/Subscribers";
 import Contacts from "./Componets/Admin/Contacts";
-import Project from "./Componets/Project";
 import Projects from "./Componets/Admin/Projects";
 import AdminDashboard from "./Componets/Admin/AdminDashboard";
 import AdminSettings from "./Componets/Admin/AdminSettings";

@@ -18,7 +18,7 @@ function LandingPage() {
         {/* Logo */}
         <div className="logo">
           <img
-            src="/src/assets/logo.svg"
+            src="/assets1/logo.svg"
             alt="Real Trust Logo"
             className="h-10 w-auto invert brightness-200"
           />
